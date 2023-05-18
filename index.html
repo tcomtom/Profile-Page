@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="popup">
+    <span>Change Name:</span>
+    <input class="change-name" name="change-name" type="text">
+    <button class="submit-btn" onclick="submitChange()">Submit</button>
+  </div>
+  <header>
+    <div class="nav">
+      <h1 class="nav-title">Profile</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">My Profile</a></li>
+        <li><a href="#">Find Connections</a></li>
+        <li><button class="btn">Sign Out</button></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="profile">
+      <section class="profile-group">
+        <div class="profile-pic">
+          <img src="./images/profile-pic.jpg" alt="user icon">
+        </div>
+        <div class="profile-info">
+          <h2 class="profile-name">Tom Shimada</h2>
+          <p>
+            <img src="images/map-marker.png" alt="marker icon">
+            <span>Orange County, CA</span>
+          </p>
+          <p>Developer | Software Engineer | Back-end Engineer
+            MongoDB expert
+          </p>
+          <p>
+            <img src="images/gear.png" alt="">
+            <button class="edit-profile" onclick="nameChange()">edit profile</button>
+          </p>
+        </div>
+      </section>
+      <section class="education-group">
+        <h3 class="title">Education</h3>
+        <div class="description">
+          <p>Coding Dojo - Software Engineer Bootcammp</p>
+          <p>May 6, 2023</p>
+          <p>Black Belt in MERN, Python and JAVA</p>
+        </div>
+      </section>
+    </div>
+    <div class="connection">
+      <section class="conn-request">
+        <div class="conn-title">
+          <div>
+            <span class="req-count">2</span>
+            <h3 class="title">Connection Requests</h3>
+          </div>
+        </div>
+        <div class="req-1">
+          <div class="name">
+            <img src="images/todd-s.jpg" alt="user icon">
+            <span>Todd E</span>
+          </div>
+          <div class="request">
+            <img onclick="acceptReq(this)" class="accept" src="images/accept-circle.png" alt="">
+            <img onclick="denyReq(this)" class="deny" src="images/close-circle.png" alt="">
+          </div>
+        </div>
+        <div class="req-2">
+          <div class="name">
+            <img src="images/phil-s.jpg" alt="user icon">
+            <span>Phil K</span>
+          </div>
+          <div class="request">
+            <img onclick="acceptReq(this)" class="accept" src="images/accept-circle.png" alt="">
+            <img onclick="denyReq(this)" class="deny" src="images/close-circle.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="my-conn">
+        <div class="conn-title">
+          <span class="conn-count">450</span>
+          <h3 class="title">Your Connections</h3>
+        </div>
+        <div class="req-1">
+          <div class="name">
+            <img src="images/adrien-s.jpg" alt="user icon">
+            <span>Adrien D</span>
+          </div>
+        </div>
+        <div class="req-2">
+          <div class="name">
+            <img src="images/anne-s.jpg" alt="user icon">
+            <span>Ann J</span>
+          </div>
+        </div>
+        <div class="req-3">
+          <div class="name">
+            <img src="images/alayne-s.jpg" alt="user icon">
+            <span>Alayne T</span>
+          </div>
+        </div>
+        <div class="req-4">
+          <div class="name">
+            <img src="images/arry-s.jpg" alt="user icon">
+            <span>Arry Y</span>
+          </div>
+        </div>
+      </section>
+      <div class="view-more">
+        <a href="#">View More</a>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </main>
+</body>
+
+</html>
